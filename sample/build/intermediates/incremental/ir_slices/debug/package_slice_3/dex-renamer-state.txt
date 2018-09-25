@@ -1,0 +1,4 @@
+#Tue Sep 25 12:51:43 IRST 2018
+base.0=D\:\\Ali.S\\testttttt\\MediaTrimmer\\sample\\build\\intermediates\\transforms\\dexMerger\\debug\\3
+path.0=classes.dex
+renamed.0=classes.dex

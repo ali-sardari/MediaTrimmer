@@ -50,9 +50,7 @@ import android.widget.VideoView;
 import com.sardari.mediatrimmer.interfaces.OnProgressVideoListener;
 import com.sardari.mediatrimmer.interfaces.OnRangeSeekBarListener;
 import com.sardari.mediatrimmer.interfaces.OnTrimVideoListener;
-import com.sardari.mediatrimmer.utils.BackgroundExecutor;
 import com.sardari.mediatrimmer.utils.TrimVideoUtils;
-import com.sardari.mediatrimmer.utils.UiThreadExecutor;
 import com.sardari.mediatrimmer.view.ProgressBarView;
 import com.sardari.mediatrimmer.view.RangeSeekBarView;
 import com.sardari.mediatrimmer.view.Thumb;
@@ -65,7 +63,11 @@ import java.util.List;
 
 import static com.sardari.mediatrimmer.utils.TrimVideoUtils.stringForTime;
 
+//import com.sardari.mediatrimmer.utils.BackgroundExecutor;
+
 public class VideoTrimmer extends FrameLayout {
+
+    private Thread thread;
 
     private static final String TAG = VideoTrimmer.class.getSimpleName();
     private static final int MIN_TIME_FRAME = 1000;
@@ -323,18 +325,31 @@ public class VideoTrimmer extends FrameLayout {
             if (mOnTrimVideoListener != null)
                 mOnTrimVideoListener.onTrimStarted();
 
-            BackgroundExecutor.execute(
-                    new BackgroundExecutor.Task("", 0L, "") {
-                        @Override
-                        public void execute() {
-                            try {
-                                TrimVideoUtils.startTrim(file, getDestinationPath(), mStartPosition, mEndPosition, mOnTrimVideoListener);
-                            } catch (final Throwable e) {
-                                Thread.getDefaultUncaughtExceptionHandler().uncaughtException(Thread.currentThread(), e);
-                            }
-                        }
+            thread = new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        TrimVideoUtils.startTrim(file, getDestinationPath(), mStartPosition, mEndPosition, mOnTrimVideoListener);
+                    } catch (final Throwable e) {
+                        Thread.getDefaultUncaughtExceptionHandler().uncaughtException(Thread.currentThread(), e);
                     }
-            );
+                }
+            });
+
+            thread.start();
+
+//            BackgroundExecutor.execute(
+//                    new BackgroundExecutor.Task("", 0L, "") {
+//                        @Override
+//                        public void execute() {
+//                            try {
+//                                TrimVideoUtils.startTrim(file, getDestinationPath(), mStartPosition, mEndPosition, mOnTrimVideoListener);
+//                            } catch (final Throwable e) {
+//                                Thread.getDefaultUncaughtExceptionHandler().uncaughtException(Thread.currentThread(), e);
+//                            }
+//                        }
+//                    }
+//            );
         }
     }
 
@@ -560,8 +575,8 @@ public class VideoTrimmer extends FrameLayout {
     }
 
     public void destroy() {
-        BackgroundExecutor.cancelAll("", true);
-        UiThreadExecutor.cancelAll("");
+        thread.interrupt();
+//        UiThreadExecutor.cancelAll("");
     }
 
     public void setMaxDuration(int maxDuration) {
