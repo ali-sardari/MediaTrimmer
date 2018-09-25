@@ -6,7 +6,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.Toast;
 
 import com.sardari.mediatrimmer.VideoTrimmer;
 import com.sardari.mediatrimmer.interfaces.OnTrimVideoListener;
@@ -46,53 +45,53 @@ public class TrimmerActivity extends AppCompatActivity {
             mVideoTrimmer.setOnTrimVideoListener(new OnTrimVideoListener() {
                 @Override
                 public void onTrimStarted() {
-                    runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            mProgressDialog.show();
-                        }
-                    });
+//                    runOnUiThread(new Runnable() {
+//                        @Override
+//                        public void run() {
+//                            mProgressDialog.show();
+//                        }
+//                    });
                 }
 
                 @Override
                 public void onSuccess(final Uri uri) {
-                    runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            mProgressDialog.cancel();
+//                    runOnUiThread(new Runnable() {
+//                        @Override
+//                        public void run() {
+//                            mProgressDialog.cancel();
 
-                            runOnUiThread(new Runnable() {
-                                @Override
-                                public void run() {
-                                    Toast.makeText(TrimmerActivity.this, getString(R.string.video_saved_at, uri.getPath()), Toast.LENGTH_SHORT).show();
-                                }
-                            });
-
-                            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                            intent.setDataAndType(uri, "video/mp4");
-                            startActivity(intent);
-                            finish();
-                        }
-                    });
+//                            runOnUiThread(new Runnable() {
+//                                @Override
+//                                public void run() {
+//                                    Toast.makeText(TrimmerActivity.this, getString(R.string.video_saved_at, uri.getPath()), Toast.LENGTH_SHORT).show();
+//                                }
+//                            });
+//
+//                            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+//                            intent.setDataAndType(uri, "video/mp4");
+//                            startActivity(intent);
+//                            finish();
+//                        }
+//                    });
                 }
 
                 @Override
                 public void onCancel() {
-                    mProgressDialog.cancel();
-                    mVideoTrimmer.destroy();
-                    finish();
+//                    mProgressDialog.cancel();
+//                    mVideoTrimmer.destroy();
+//                    finish();
                 }
 
                 @Override
                 public void onError(final String message) {
-                    mProgressDialog.cancel();
-
-                    runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            Toast.makeText(TrimmerActivity.this, message, Toast.LENGTH_SHORT).show();
-                        }
-                    });
+//                    mProgressDialog.cancel();
+//
+//                    runOnUiThread(new Runnable() {
+//                        @Override
+//                        public void run() {
+//                            Toast.makeText(TrimmerActivity.this, message, Toast.LENGTH_SHORT).show();
+//                        }
+//                    });
                 }
             });
         }

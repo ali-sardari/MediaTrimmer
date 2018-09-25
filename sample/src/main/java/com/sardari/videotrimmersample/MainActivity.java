@@ -12,11 +12,14 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import com.sardari.mediatrimmer.interfaces.OnTrimVideoListener;
 import com.sardari.mediatrimmer.utils.FileUtils;
+import com.sardari.mediatrimmer.view.TrimmerDialog;
 
 import java.io.File;
 
@@ -58,41 +61,45 @@ public class MainActivity extends AppCompatActivity {
             if (requestCode == REQUEST_VIDEO_TRIMMER) {
                 final Uri selectedUri = data.getData();
                 if (selectedUri != null) {
-//                    TrimmerDialog trimmerDialog = new TrimmerDialog(MainActivity.this);
-//                    trimmerDialog.setMaxDuration(8);
-//                    trimmerDialog.setMinDuration(3);
-//                    trimmerDialog.setOrigPath(FileUtils.getPath(this, selectedUri));
-//                    trimmerDialog.setDestPath(getTempFile());
-//                    trimmerDialog.setOnTrimVideoListener(new OnTrimVideoListener() {
-//                        @Override
-//                        public void onTrimStarted() {
-//
-//                        }
-//
-//                        @Override
-//                        public void onSuccess(final Uri uri) {
+                    Log.e("TAG", "selected Uri : " + selectedUri );
+                    Log.e("TAG", "selected Uri Path : " + FileUtils.getPath(this, selectedUri) );
+                    TrimmerDialog trimmerDialog = new TrimmerDialog(MainActivity.this);
+                    trimmerDialog.setMaxDuration(8);
+                    trimmerDialog.setMinDuration(3);
+                    trimmerDialog.setOrigPath(FileUtils.getPath(this, selectedUri));
+                    trimmerDialog.setDestPath(getTempFile());
+                    trimmerDialog.setOnTrimVideoListener(new OnTrimVideoListener() {
+                        @Override
+                        public void onTrimStarted() {
+
+                        }
+
+                        @Override
+                        public void onSuccess(final Uri uri) {
+                            Log.w("TAG", "onSuccess : " + getString(R.string.video_saved_at, uri.getPath()) );
 //                            Toast.makeText(MainActivity.this, getString(R.string.video_saved_at, uri.getPath()), Toast.LENGTH_SHORT).show();
-//                        }
-//
-//                        @Override
-//                        public void onCancel() {
-//                            Log.w("TAG", "MainActivity_onCancel_84-> :" );
+                        }
+
+                        @Override
+                        public void onCancel() {
+                            Log.e("TAG", "MainActivity_onCancel_84-> :" );
 //                            finish();
-//                        }
-//
-//                        @Override
-//                        public void onError(final String message) {
+                        }
+
+                        @Override
+                        public void onError(final String message) {
+                            Log.e("TAG", "Message : " + message );
 //                            runOnUiThread(new Runnable() {
 //                                @Override
 //                                public void run() {
 //                                    Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
 //                                }
 //                            });
-//                        }
-//                    });
-//                    trimmerDialog.showDialog();
+                        }
+                    });
+                    trimmerDialog.showDialog();
 
-                    startTrimActivity(selectedUri);
+//                    startTrimActivity(selectedUri);
                 } else {
                     Toast.makeText(MainActivity.this, R.string.toast_cannot_retrieve_selected_video, Toast.LENGTH_SHORT).show();
                 }
