@@ -1,0 +1,109 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Ali.S\testttttt\MediaTrimmer\sample\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from D:\Ali.S\testttttt\MediaTrimmer\sample\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from D:\Ali.S\testttttt\MediaTrimmer\sample\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from D:\Ali.S\testttttt\MediaTrimmer\sample\src\main\AndroidManifest.xml:2:1-26:12
+MERGED from [:mediatrimmer] D:\Ali.S\testttttt\MediaTrimmer\mediatrimmer\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-14:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\17c3aba50fa06ff15521499e64850ba2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\6a55abf57c9c51a6dc9ef087946a1934\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\13b48f4782a890ee0a0e868e48362002\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\08478f3b56ca8ce401762f550308ff4a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\b20d15bc8a4a65785dc0d524820b2e83\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\77aa7d0a1828019c1b93fb89a6dad3ae\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\df614253694b394588ba46b051c7c718\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\7188b2b994b6f3d81b0728c5245d0a60\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\2cd43d66af38eaa53647485c0381f64d\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\d9211c92cd2c13097e36e6a03862594b\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\e8e43e4ea89a53b204de561acc010d44\AndroidManifest.xml:17:1-22:12
+INJECTED from D:\Ali.S\testttttt\MediaTrimmer\sample\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from D:\Ali.S\testttttt\MediaTrimmer\sample\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from D:\Ali.S\testttttt\MediaTrimmer\sample\src\main\AndroidManifest.xml:2:1-26:12
+	package
+		ADDED from D:\Ali.S\testttttt\MediaTrimmer\sample\src\main\AndroidManifest.xml:3:5-45
+		INJECTED from D:\Ali.S\testttttt\MediaTrimmer\sample\src\main\AndroidManifest.xml
+		INJECTED from D:\Ali.S\testttttt\MediaTrimmer\sample\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Ali.S\testttttt\MediaTrimmer\sample\src\main\AndroidManifest.xml
+		ADDED from D:\Ali.S\testttttt\MediaTrimmer\sample\src\main\AndroidManifest.xml:2:1-26:12
+		INJECTED from D:\Ali.S\testttttt\MediaTrimmer\sample\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\Ali.S\testttttt\MediaTrimmer\sample\src\main\AndroidManifest.xml
+		ADDED from D:\Ali.S\testttttt\MediaTrimmer\sample\src\main\AndroidManifest.xml:2:1-26:12
+		INJECTED from D:\Ali.S\testttttt\MediaTrimmer\sample\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Ali.S\testttttt\MediaTrimmer\sample\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from D:\Ali.S\testttttt\MediaTrimmer\sample\src\main\AndroidManifest.xml:5:5-80
+	android:name
+		ADDED from D:\Ali.S\testttttt\MediaTrimmer\sample\src\main\AndroidManifest.xml:5:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\Ali.S\testttttt\MediaTrimmer\sample\src\main\AndroidManifest.xml:6:5-81
+MERGED from [:mediatrimmer] D:\Ali.S\testttttt\MediaTrimmer\mediatrimmer\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:9:5-81
+MERGED from [:mediatrimmer] D:\Ali.S\testttttt\MediaTrimmer\mediatrimmer\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:9:5-81
+	android:name
+		ADDED from D:\Ali.S\testttttt\MediaTrimmer\sample\src\main\AndroidManifest.xml:6:22-78
+application
+ADDED from D:\Ali.S\testttttt\MediaTrimmer\sample\src\main\AndroidManifest.xml:8:5-24:19
+MERGED from [:mediatrimmer] D:\Ali.S\testttttt\MediaTrimmer\mediatrimmer\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-12:19
+MERGED from [:mediatrimmer] D:\Ali.S\testttttt\MediaTrimmer\mediatrimmer\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-12:19
+	android:supportsRtl
+		ADDED from D:\Ali.S\testttttt\MediaTrimmer\sample\src\main\AndroidManifest.xml:12:9-35
+	android:label
+		ADDED from D:\Ali.S\testttttt\MediaTrimmer\sample\src\main\AndroidManifest.xml:11:9-41
+	android:icon
+		ADDED from D:\Ali.S\testttttt\MediaTrimmer\sample\src\main\AndroidManifest.xml:10:9-43
+	android:allowBackup
+		ADDED from D:\Ali.S\testttttt\MediaTrimmer\sample\src\main\AndroidManifest.xml:9:9-35
+	android:theme
+		ADDED from D:\Ali.S\testttttt\MediaTrimmer\sample\src\main\AndroidManifest.xml:13:9-40
+activity#com.sardari.videotrimmersample.MainActivity
+ADDED from D:\Ali.S\testttttt\MediaTrimmer\sample\src\main\AndroidManifest.xml:14:9-20:20
+	android:name
+		ADDED from D:\Ali.S\testttttt\MediaTrimmer\sample\src\main\AndroidManifest.xml:14:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\Ali.S\testttttt\MediaTrimmer\sample\src\main\AndroidManifest.xml:15:13-19:29
+action#android.intent.action.MAIN
+ADDED from D:\Ali.S\testttttt\MediaTrimmer\sample\src\main\AndroidManifest.xml:16:17-69
+	android:name
+		ADDED from D:\Ali.S\testttttt\MediaTrimmer\sample\src\main\AndroidManifest.xml:16:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\Ali.S\testttttt\MediaTrimmer\sample\src\main\AndroidManifest.xml:18:17-77
+	android:name
+		ADDED from D:\Ali.S\testttttt\MediaTrimmer\sample\src\main\AndroidManifest.xml:18:27-74
+activity#com.sardari.videotrimmersample.TrimmerActivity
+ADDED from D:\Ali.S\testttttt\MediaTrimmer\sample\src\main\AndroidManifest.xml:22:9-23:47
+	android:name
+		ADDED from D:\Ali.S\testttttt\MediaTrimmer\sample\src\main\AndroidManifest.xml:23:13-44
+uses-sdk
+INJECTED from D:\Ali.S\testttttt\MediaTrimmer\sample\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Ali.S\testttttt\MediaTrimmer\sample\src\main\AndroidManifest.xml
+MERGED from [:mediatrimmer] D:\Ali.S\testttttt\MediaTrimmer\mediatrimmer\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-44
+MERGED from [:mediatrimmer] D:\Ali.S\testttttt\MediaTrimmer\mediatrimmer\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\17c3aba50fa06ff15521499e64850ba2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\17c3aba50fa06ff15521499e64850ba2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\6a55abf57c9c51a6dc9ef087946a1934\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\6a55abf57c9c51a6dc9ef087946a1934\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\13b48f4782a890ee0a0e868e48362002\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\13b48f4782a890ee0a0e868e48362002\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\08478f3b56ca8ce401762f550308ff4a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\08478f3b56ca8ce401762f550308ff4a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\b20d15bc8a4a65785dc0d524820b2e83\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\b20d15bc8a4a65785dc0d524820b2e83\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\77aa7d0a1828019c1b93fb89a6dad3ae\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\77aa7d0a1828019c1b93fb89a6dad3ae\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\df614253694b394588ba46b051c7c718\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\df614253694b394588ba46b051c7c718\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\7188b2b994b6f3d81b0728c5245d0a60\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\7188b2b994b6f3d81b0728c5245d0a60\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\2cd43d66af38eaa53647485c0381f64d\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\2cd43d66af38eaa53647485c0381f64d\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\d9211c92cd2c13097e36e6a03862594b\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\d9211c92cd2c13097e36e6a03862594b\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\e8e43e4ea89a53b204de561acc010d44\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\e8e43e4ea89a53b204de561acc010d44\AndroidManifest.xml:20:5-44
+INJECTED from D:\Ali.S\testttttt\MediaTrimmer\sample\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Ali.S\testttttt\MediaTrimmer\sample\src\main\AndroidManifest.xml
+		ADDED from D:\Ali.S\testttttt\MediaTrimmer\sample\src\main\AndroidManifest.xml
+		INJECTED from D:\Ali.S\testttttt\MediaTrimmer\sample\src\main\AndroidManifest.xml

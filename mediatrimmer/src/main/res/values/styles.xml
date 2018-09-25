@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="FullScreenDialogTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/FullScreenDialogTheme.Anim</item>
+    </style>
+
+    <style name="FullScreenDialogTheme.Anim" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/show_anim</item>
+        <item name="android:windowExitAnimation">@anim/hide_anim</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,29 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.sardari.mediatrimmer"
+        minSdkVersion 16
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation project(':mediatrimmer')
+//    implementation 'com.googlecode.mp4parser:isoparser:1.0.6'
+//    implementation ('com.github.ali-sardari:MediaTrimmer:1.0.1') {
+//        exclude group: 'com.googlecode.mp4parser'
+//    }
+
+
+}
